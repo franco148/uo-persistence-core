@@ -1,4 +1,4 @@
-package com.fral.uo.data.core.persistencecore;
+package com.fral.uo.data.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

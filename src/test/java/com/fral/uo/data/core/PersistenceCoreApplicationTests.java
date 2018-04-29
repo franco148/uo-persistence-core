@@ -1,4 +1,4 @@
-package com.fral.uo.data.core.persistencecore;
+package com.fral.uo.data.core;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
