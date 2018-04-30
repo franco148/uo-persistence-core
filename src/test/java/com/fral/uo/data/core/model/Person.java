@@ -4,8 +4,12 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@MappedSuperclass
-public abstract class Person {
+//@MappedSuperclass
+//Based on what we need to do, this class will not be abstract.
+
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class Person {
 
     @Id
     @GeneratedValue

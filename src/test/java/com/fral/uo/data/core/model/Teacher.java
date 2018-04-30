@@ -7,7 +7,7 @@ import javax.persistence.ManyToMany;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+//@Entity
 public class Teacher extends Person {
 
     private int workedHours;

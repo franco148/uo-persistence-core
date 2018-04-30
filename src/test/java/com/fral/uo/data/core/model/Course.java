@@ -2,15 +2,16 @@ package com.fral.uo.data.core.model;
 
 import net.minidev.json.annotate.JsonIgnore;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 public class Course {
 
+    @Id
+    @GeneratedValue
+    private Long id;
     private String name;
 
     @ManyToMany(mappedBy = "courses")

@@ -32,7 +32,7 @@ public class UmssOnlineDaoImpl implements UmssOnlineDao {
     @Transactional
     @Override
     public void persist(Object entity) {
-
+        entityManager.persist(entity);
     }
 
     @Transactional

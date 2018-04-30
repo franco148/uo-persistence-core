@@ -13,7 +13,7 @@ public class StudentCard {
     @Column(nullable = false)
     private Date expirationDate;
 
-    @OneToOne(fetch = FetchType.LAZY, mappedBy = "studentCard")
+    @OneToOne(fetch = FetchType.LAZY, mappedBy = "card")
     private Student student;
 
 

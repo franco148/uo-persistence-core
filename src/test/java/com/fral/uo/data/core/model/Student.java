@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+//@Entity
 public class Student extends Person {
 
     @Column(nullable = false)
@@ -14,7 +14,7 @@ public class Student extends Person {
     private StudyLevel studyLevel;
 
     @OneToOne(fetch = FetchType.LAZY)
-    private StudentCard studentCard;
+    private StudentCard card;
 
     @ManyToMany
     @JoinTable(
@@ -50,12 +50,12 @@ public class Student extends Person {
         this.studyLevel = studyLevel;
     }
 
-    public StudentCard getStudentCard() {
-        return studentCard;
+    public StudentCard getCard() {
+        return card;
     }
 
-    public void setStudentCard(StudentCard studentCard) {
-        this.studentCard = studentCard;
+    public void setCard(StudentCard card) {
+        this.card = card;
     }
 
     public List<Teacher> getTeachers() {
