@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import java.io.Serializable;
@@ -28,26 +29,31 @@ public class UmssOnlineDaoImpl implements UmssOnlineDao {
     //endregion
 
     //region UmssOnlineDao Members
+    @Transactional
     @Override
     public void persist(Object entity) {
 
     }
 
+    @Transactional
     @Override
     public void persist(Object[] entities) {
 
     }
 
+    @Transactional(readOnly = true)
     @Override
     public <T> List<T> find(Class<T> entityClass) {
         return null;
     }
 
+    @Transactional(readOnly = true)
     @Override
     public <T> T load(Class<T> entityClass, Serializable id) {
         return null;
     }
 
+    @Transactional(readOnly = true)
     @Override
     public <T> List<T> find(String jpql) {
         return null;
