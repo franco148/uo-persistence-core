@@ -14,6 +14,7 @@ public class StudentCard {
     private Date expirationDate;
 
     @OneToOne(fetch = FetchType.LAZY, mappedBy = "card")
+    //@OneToOne(fetch = FetchType.LAZY)
     private Student student;
 
 

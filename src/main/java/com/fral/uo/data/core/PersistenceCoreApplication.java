@@ -19,6 +19,6 @@ public class PersistenceCoreApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) {
-		dao.persist(new Object());
+		//dao.persist(new Object());
 	}
 }
