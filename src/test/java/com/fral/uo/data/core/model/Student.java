@@ -19,7 +19,7 @@ public class Student extends Person {
 
     @ManyToMany
     @JoinTable(
-            name = "StudentsAndTeachersRelationship",
+            name = "StudentsAndTeachers",
             joinColumns = @JoinColumn(name = "studentId"),
             inverseJoinColumns = @JoinColumn(name = "teacherId")
     )
