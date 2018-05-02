@@ -13,7 +13,11 @@ public class Student extends Person {
     @Enumerated(EnumType.STRING)
     private StudyLevel studyLevel;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(
+            fetch = FetchType.EAGER,
+            cascade = {CascadeType.PERSIST, CascadeType.REMOVE},
+            optional = false
+    )
     //@OneToOne(fetch = FetchType.LAZY, mappedBy = "student")
     private StudentCard card;
 

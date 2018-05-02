@@ -3,6 +3,7 @@ package com.fral.uo.data.core;
 import com.fral.uo.data.core.api.UmssOnlineDao;
 //import com.fral.uo.data.core.model.Review;
 //import com.fral.uo.data.core.model.ReviewRating;
+import com.fral.uo.data.core.model.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,8 +22,17 @@ public class PersistenceCoreApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) {
-//		Review review = new Review("First description", ReviewRating.EXCELENT);
-//		Review result = dao.persist(review);
-//		System.out.println(result);
+//		Address address = new Address("ABC", "DEF", "CBBA", "BOL");
+//
+//		Person student = new Student("FRAL", "AL", "IS", StudyLevel.TENTH);
+//		student.setAddress(address);
+//
+//        Person teacher = new Teacher("TA1", "TLN", 180, "Mobile");
+//        teacher.setAddress(address);
+//
+//        dao.persist(student);
+//        dao.persist(teacher);
+//
+//        System.out.println("Completed...");
 	}
 }

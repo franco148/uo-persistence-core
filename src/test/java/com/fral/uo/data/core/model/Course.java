@@ -15,7 +15,7 @@ public class Course {
     private String name;
 
     @ManyToMany(mappedBy = "courses")
-    @JsonIgnore
+//    @JsonIgnore
     private List<Person> people = new ArrayList<>();
 
     @OneToMany(mappedBy = "course")

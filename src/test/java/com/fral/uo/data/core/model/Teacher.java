@@ -14,7 +14,7 @@ public class Teacher extends Person {
     private String speciality;
 
     @ManyToMany(mappedBy = "teachers")
-    @JsonIgnore
+//    @JsonIgnore
     private List<Student> students = new ArrayList<>();
 
     protected Teacher() {
