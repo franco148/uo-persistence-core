@@ -1,7 +1,5 @@
 package com.fral.uo.data.core.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import java.util.ArrayList;
@@ -14,7 +12,6 @@ public class Teacher extends Person {
     private String speciality;
 
     @ManyToMany(mappedBy = "teachers")
-//    @JsonIgnore
     private List<Student> students = new ArrayList<>();
 
     protected Teacher() {

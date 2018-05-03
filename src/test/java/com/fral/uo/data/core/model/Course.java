@@ -14,11 +14,10 @@ public class Course {
     private Long id;
     private String name;
 
-    @ManyToMany(mappedBy = "courses")
-//    @JsonIgnore
+    @ManyToMany(mappedBy = "courses", cascade = CascadeType.PERSIST)
     private List<Person> people = new ArrayList<>();
 
-    @OneToMany(mappedBy = "course")
+    @OneToMany(mappedBy = "course", cascade = CascadeType.PERSIST)
     private List<Review> reviews = new ArrayList<>();
 
     protected Course() {

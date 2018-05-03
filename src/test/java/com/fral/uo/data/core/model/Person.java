@@ -20,11 +20,12 @@ public abstract class Person {
     @Embedded
     private Address address;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST)
     @JoinTable(
             name = "PersonCourses",
             joinColumns = @JoinColumn(name = "personId"),
-            inverseJoinColumns = @JoinColumn(name = "courseId")
+            inverseJoinColumns = @JoinColumn(name = "courseId"
+            )
     )
     private List<Course> courses = new ArrayList<>();
 
