@@ -1,6 +1,4 @@
-package com.fral.uo.data.core.model;
-
-import net.minidev.json.annotate.JsonIgnore;
+package com.umssonline.persistence.model;
 
 import javax.persistence.*;
 import java.util.ArrayList;

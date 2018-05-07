@@ -1,4 +1,4 @@
-package com.fral.uo.data.core.model;
+package com.umssonline.persistence.model;
 
 import javax.persistence.*;
 import java.util.Date;

@@ -1,6 +1,6 @@
-package com.fral.uo.data.core.impl;
+package com.umssonline.persistence.impl;
 
-import com.fral.uo.data.core.api.UmssOnlineDao;
+import com.umssonline.persistence.api.UmssOnlineDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

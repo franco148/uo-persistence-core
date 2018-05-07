@@ -1,4 +1,4 @@
-package com.fral.uo.data.core;
+package com.umssonline.persistence;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

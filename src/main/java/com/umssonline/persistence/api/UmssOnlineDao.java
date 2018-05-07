@@ -1,4 +1,4 @@
-package com.fral.uo.data.core.api;
+package com.umssonline.persistence.api;
 
 import java.io.Serializable;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package com.fral.uo.data.core.model;
+package com.umssonline.persistence.model;
 
 public enum ReviewRating {
     BAD, GOOD, EXCELLENT

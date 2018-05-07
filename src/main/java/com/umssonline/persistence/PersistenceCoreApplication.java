@@ -1,9 +1,8 @@
-package com.fral.uo.data.core;
+package com.umssonline.persistence;
 
-import com.fral.uo.data.core.api.UmssOnlineDao;
+import com.umssonline.persistence.api.UmssOnlineDao;
 //import com.fral.uo.data.core.model.Review;
 //import com.fral.uo.data.core.model.ReviewRating;
-import com.fral.uo.data.core.model.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

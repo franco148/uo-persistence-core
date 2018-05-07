@@ -1,4 +1,4 @@
-package com.fral.uo.data.core.model;
+package com.umssonline.persistence.model;
 
 /**
  * This represents the Semester that a students courses.

@@ -1,15 +1,14 @@
-package com.fral.uo.data.core.impl;
+package com.umssonline.persistence.impl;
 
-import com.fral.uo.data.core.PersistenceCoreApplication;
-import com.fral.uo.data.core.api.UmssOnlineDao;
-import com.fral.uo.data.core.model.*;
+import com.umssonline.persistence.PersistenceCoreApplication;
+import com.umssonline.persistence.api.UmssOnlineDao;
+import com.umssonline.persistence.model.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
